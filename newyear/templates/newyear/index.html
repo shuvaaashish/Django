@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is it New Year</title>
-    <link ahref="{% static 'newyear/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'newyear/styles.css' %}">
 </head>
 <body>
-    {% if newyear%}
-    <h1>Yes</h1>
+    {% if newyear %}
+    <p>Yes</p>
     {% else %}
-    <h1>No</h1>
+    <p>No</p>
     {% endif %}
 </body>
 </html>

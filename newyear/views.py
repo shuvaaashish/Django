@@ -6,5 +6,5 @@ import datetime
 def index(request):
     now=datetime.datetime.now()
     return render(request, "newyear/index.html",{
-        "newyear":now.date==1 and now.month==1
+        "newyear":now.day==30
     })
