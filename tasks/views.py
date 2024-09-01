@@ -10,7 +10,7 @@ class NewTaskForm(forms.Form):
 
 # Create your views here.
 def index(request):
-    if "task" not in request.session:
+    if "tasks" not in request.session:
         request.session["tasks"]=[]
     return render(request, "tasks/index.html", {
         "tasks": request.session["tasks"]
